@@ -1,0 +1,356 @@
+/*Start Main Classes*/
+$brand-color:#5487f0;
+$typo-color:#313336;
+$second-color:#58c6ff;
+$paragraph-font:'OpensansRegular';
+$heading-font: arial;
+@font-face {
+  font-family: 'OpensansRegular';
+  src: url('../fonts/OpenSans-Regular.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+/*End Main Classes*/
+/*Start Header Section*/ 
+header
+{
+  background-image: url("../images/Wave.png");
+  height: auto;
+  width: 100%;
+  background-size: cover;
+  background-position: bottom;
+  padding: 50px 0 25px;
+  @media(max-width:767px)
+  {
+    text-align: center
+  }
+  .message
+  {
+    .logo 
+    {
+     max-width:100%;
+     margin-bottom: 40px;
+    }
+    h1 
+    {
+     font-family: $heading-font;
+     font-weight: bold;
+     max-width:85%;
+     color: #FFF;
+    }
+    .calque
+    {
+      margin-left: 30px;
+      width: 90%
+    }
+  }
+  .contact 
+  {
+    width:380px;
+    background-color: #FFF;
+    text-align: center;
+    padding-bottom: 40px;
+    height: 650px;
+    box-shadow: 3px 4px 8px rgba(83, 138, 240, .2);
+    .ask
+    {
+      background-image: url("../images/bg.png");
+      background-size: cover;
+      background-position: bottom;
+      color: #FFF;
+      padding: 20px;
+      margin-bottom: 20px;
+      h3
+      {
+       font-family: $heading-font;
+       font-weight: bold;
+       font-size: 24px;
+      }
+      h5
+      {
+       font-family: $paragraph-font;
+       font-weight: normal;
+      }
+    }
+    form 
+    {
+      label
+     {
+       text-align: left;
+       color: #b4b8bd;
+     }
+     input,
+     button,
+     label
+     {
+       display: block;
+       margin-left: 20px
+     }
+     input[type="text"]
+     {
+       margin: 5px auto;
+       width: 75%;
+       height: 40px;
+     }
+     button[type="submit"]
+     {
+       margin: 15px auto 5px;
+       width: 75%;
+       background-color: #44bfff;
+       border: 2px solid #44bfff;
+       color: #FFF;
+       padding: 20px 15px;
+       font-family: $heading-font;
+       font-weight: bold
+     }
+    }
+  }
+}
+/*End Header Section*/ 
+/*Start Features Section*/ 
+.features
+{
+ padding: 35px 0;
+ h1 
+ {
+  font-family: $heading-font;
+  font-weight: bold;
+  margin-bottom: 50px;
+ }
+ .feat 
+ {
+   margin-bottom: 25px;
+   box-shadow: 9px 9px 15px #f3f3f3,
+               -8px -8px 15px #f3f3f3 ;
+   height: 300px;
+   padding: 25px 15px;
+   img 
+   {
+    margin-bottom: 25px;
+   }
+   h3 
+   {
+    font-family: $heading-font;
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-size: 19px;
+   }
+   p 
+   {
+    font-family: $paragraph-font;
+    font-weight: normal;
+    color: #b3b3b3;
+    line-height: 1.1;
+    text-align: left;
+    margin-top: 20px;
+   }
+ }
+}
+/*End Features Section*/ 
+/*Start About-Us Section*/ 
+.about-us
+{
+ padding: 45px 0;
+ background-color: #f5fbff;
+ .about 
+ {
+   h2 
+   {
+    font-family: $heading-font;
+    font-weight: bold;
+    text-align: left;
+    padding-right: 85px;
+    @media(max-width:767px)
+    {
+      font-size: 24px;
+      margin-top: 30px;
+      margin-bottom: 30px;
+    }
+   }
+   p 
+   {
+    font-family: $paragraph-font;
+    font-weight: normal;
+    color:#b3b3b3;
+    line-height: 1.7;
+    text-align: left;
+    font-size: 17px;
+    width: 90%;
+   }
+   .mission
+   {
+    margin-right: 45px;
+    @media(max-width:460px)
+    {
+      margin-right: 15px
+    }
+    @media(min-width:768px) and ( max-width:991px)
+    {
+     margin: 30px 7px
+    }
+    img 
+    {
+     margin-bottom: 15px
+    }
+    .different
+    {
+     margin-top: 17px;
+    }
+    h5
+    {
+     font-family: $heading-font;
+     font-weight: bold;
+     font-size: 16px;
+    }
+    .extra{margin-top: 5px}
+   }
+   img 
+   {
+    max-width: 100%;
+   }
+ }
+}
+/*End About-Us Section*/
+/*Start Testimonails Section*/ 
+.testimonials
+{
+  background-image: linear-gradient(90deg,#51bef8,#5487f0);
+  padding: 80px 0;
+  margin-bottom: 60px;
+  h3 
+  {
+   font-family: $heading-font;
+   font-weight: bold;
+   color: #FFF;
+   margin-bottom: 60px
+  }
+  .person
+  {
+    background-color: #FFF;
+    padding: 50px 15px;
+    width: 95%;
+    border-radius:5px;
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    -ms-border-radius:5px;
+    -o-border-radius:5px;
+    margin-bottom: 30px;
+     img 
+    {
+     margin-bottom: 30px
+    }
+    h5 
+    {
+     font-family: $heading-font;
+     font-weight: bold;
+     margin-bottom: 1px
+    }
+    h6 
+    {
+     font-family: $paragraph-font;
+     color: #b3b3b3;
+     font-weight: normal
+    }
+    p 
+    {
+     font-family: $paragraph-font;
+     font-weight: normal;
+     color: #b3b3b3;
+     line-height: 1.7;
+     width: 95%
+    }
+    .review
+    {
+      .fa-star
+      {
+       color: #ffb24c
+      }
+    }
+  }
+} 
+/*End Testimonails Section*/ 
+/*Start CTA Section*/
+.cta 
+{
+ background-image: url("../images/phone-reqest.png");
+ background-size: cover;
+ background-position: center;
+ height: 450px;
+ margin-bottom: 30px;
+ h1 
+ {
+  font-family: $heading-font;
+  font-weight: bold;
+  font-size: 50px;
+  margin-bottom: 45px;
+  @media(max-width:767px)
+  {
+    font-size: 38px
+  }
+  span 
+  {
+   color: #31a703;
+   margin-left: 25px
+  }
+ }
+ p 
+ {
+  font-family: $paragraph-font;
+  color: #b3b3b3;
+  margin-bottom: 60px
+ }
+ button 
+ {
+  background-color: #44bfff;
+  border: 2px solid #44bfff;
+  color: #FFF;
+  padding: 20px 65px;
+  font-family: $heading-font;
+  font-weight: bold;
+  border-radius:1px;
+  -webkit-border-radius:1px;
+  -moz-border-radius:1px;
+  -ms-border-radius:1px;
+  -o-border-radius:1px;
+  font-size: 30px
+}
+} 
+/*End CTA Section*/ 
+/*Start Footer*/ 
+footer 
+{
+ background-image: url("../images/footer-wave.png");
+ background-position: top;
+ height: auto;
+ padding-top: 90px;
+ padding-bottom: 40px;
+ margin-bottom: 0;
+ h5
+ {
+  font-family: $heading-font;
+  font-weight: bold;
+  margin-bottom:15px;
+ }
+ p 
+ {
+  font-family: $paragraph-font;
+  font-weight: normal;
+  color: #b3b3b3;
+ }
+ /*Start Copyright*/
+.copy
+{
+  border-top: 1px solid #e8edef;
+  padding-top: 10px;
+  p 
+  {
+   font-family: $paragraph-font;
+   font-weight: normal;
+   color: #b3b3b3;
+   width: 100%;
+   span{color: #63c7ff}
+  }
+} 
+/*End Copyright */  
+}
+/*End Footer*/
